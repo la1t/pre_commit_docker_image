@@ -30,4 +30,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             PYTHON_VERSION=${{ matrix.python-version }}
-            PRE_COMMIT_VERSION=${{ matrix.poetry-version }}
+            PRE_COMMIT_VERSION=${{ matrix.pre-commit-version }}
