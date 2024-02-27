@@ -18,5 +18,5 @@ RUN apt-get update && \
     apt-get purge -y --auto-remove -o APT:AutoRemove:RecommendsImportant=false && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache pre-commit==${PRE_COMMIT_VERSION} && \
+RUN pip install --no-cache pre-commit==$PRE_COMMIT_VERSION && \
     pre-commit --version
